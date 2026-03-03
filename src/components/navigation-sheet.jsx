@@ -12,7 +12,7 @@ import { NavMenu } from "@/components/nav-menu";
 
 export const NavigationSheet = () => {
   return (
-    <Sheet>
+    <Sheet className>
       <VisuallyHidden>
         <SheetTitle>Navigation Menu</SheetTitle>
       </VisuallyHidden>

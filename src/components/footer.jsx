@@ -37,8 +37,6 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <div className="flex min-h-screen flex-col">
-      <div className="grow bg-muted" />
       <footer className="border-t">
         <div className="mx-auto max-w-(--breakpoint-xl)">
           <div className="flex flex-col items-center justify-start py-12">
@@ -85,7 +83,6 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-    </div>
   );
 };
 

@@ -10,79 +10,71 @@ import { Logo } from "./logo";
 
 const footerLinks = [
   {
-    title: "Overview",
+    title: "Home",
     href: "#",
   },
   {
-    title: "Features",
-    href: "#",
+    title: "Serviços",
+    href: "#servicos",
   },
   {
-    title: "Pricing",
-    href: "#",
+    title: "Planos",
+    href: "#planos",
   },
   {
-    title: "Careers",
-    href: "#",
-  },
-  {
-    title: "Help",
-    href: "#",
-  },
-  {
-    title: "Privacy",
-    href: "#",
-  },
+    title: "Avaliações",
+    href: "#avaliações",
+  }
 ];
 
 const Footer = () => {
   return (
-      <footer className="border-t">
-        <div className="mx-auto max-w-(--breakpoint-xl)">
-          <div className="flex flex-col items-center justify-start py-12">
-            {/* Logo */}
+    <footer className="border-t">
+      <div className="mx-auto max-w-(--breakpoint-xl)">
+        <div className="flex flex-col items-center justify-start py-12">
+          {/* Logo */}
 
-            <Logo></Logo>
+          <Logo></Logo>
 
-            <ul className="mt-6 flex flex-wrap items-center gap-4">
-              {footerLinks.map(({ title, href }) => (
-                <li key={title}>
-                  <Link className="text-muted-foreground hover:text-foreground" href={href}>
-                    {title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <Separator />
-          <div
-            className="flex flex-col-reverse items-center justify-between gap-x-2 gap-y-5 px-6 py-8 sm:flex-row xl:px-0">
-            {/* Copyright */}
-            <span className="text-muted-foreground">
-              &copy; {new Date().getFullYear()}{" "}
-              <Link href="/" target="_blank">
-                Shadcn UI Blocks
-              </Link>
-              . All rights reserved.
-            </span>
+          <ul className="mt-6 flex flex-wrap items-center gap-4">
+            {footerLinks.map(({ title, href }) => (
+              <li key={title}>
+                <Link className="text-muted-foreground hover:text-foreground" href={href}>
+                  {title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <Separator />
+        <div
+          className="flex flex-col-reverse items-center justify-between gap-x-2 gap-y-5 px-6 py-8 sm:flex-row xl:px-0">
+          {/* Copyright */}
+          <span className="text-muted-foreground">
+            &copy; {new Date().getFullYear()}{" "}
+            <Link href="/" target="_blank">
+              Zenith
+            </Link>
+            . Todos os direitos reservados.
+          </span>
 
-            <div className="flex items-center gap-5 text-muted-foreground">
-              <Link href="#" target="_blank">
-                <TwitterIcon className="h-5 w-5" />
-              </Link>
-              <Link href="#" target="_blank">
-                <DribbbleIcon className="h-5 w-5" />
-              </Link>
-              <Link href="#" target="_blank">
-                <TwitchIcon className="h-5 w-5" />
-              </Link>
-              <Link href="#" target="_blank">
-                <GithubIcon className="h-5 w-5" />
-              </Link>
-            </div>
+          <div className="flex items-center gap-5 text-muted-foreground">
+            <Link href="#" target="_blank">
+              <TwitterIcon className="h-5 w-5" />
+            </Link>
+            <Link href="#" target="_blank">
+              <DribbbleIcon className="h-5 w-5" />
+            </Link>
+            <Link href="#" target="_blank">
+              <TwitchIcon className="h-5 w-5" />
+            </Link>
+            <Link href="#" target="_blank">
+              <GithubIcon className="h-5 w-5" />
+            </Link>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
   );
 };
 

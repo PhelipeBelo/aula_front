@@ -69,7 +69,7 @@ const actions = [
 
 export default function ZenithFeatures() {
   return (
-    <section className="py-16 px-8 flex flex-col items-center">
+    <section id="servicos" className="py-16 px-8 flex flex-col items-center">
       {/* Header da Seção */}
       <div className="text-center max-w-3xl mb-12">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">

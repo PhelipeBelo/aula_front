@@ -64,7 +64,7 @@ const Pricing4 = ({
 }) => {
   const [isAnnually, setIsAnnually] = useState(false);
   return (
-    <section className={cn("py-32", className)}>
+    <section id="planos" className={cn("py-32", className)}>
       <div className="container mx-auto px-4">
         <div className="mx-auto flex max-w-7xl flex-col gap-6">
           <h2 className="text-4xl font-bold text-pretty lg:text-6xl">
